@@ -39,12 +39,29 @@
 
 
 /********************* Flexbox *********************/
-
+.d-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
 
 /********************* Main classes *********************/
-.container{
+main{
     width: 100%;
     min-height: 100vh;
+}
+.container{
+    width: 50%;
+}
+.container #result, .container #summary{
+    width: calc(100% / 2);
+}
+.container #result{
+
+}
+.container #summary{
+
 }
 
 /********************* Media queries *********************/
