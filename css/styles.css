@@ -57,10 +57,10 @@ main{
 .container #result, .container #summary{
     width: calc(100% / 2);
 }
-.container #result{
+.container #resultSection{
 
 }
-.container #summary{
+.container #summarySection{
 
 }
 
