@@ -6,6 +6,11 @@
     --orangey-yellow: hsl(39, 100%, 56%);
     --green-teal: hsl(166, 100%, 37%);
     --cobalt-blue: hsl(234, 85%, 45%);
+    /* Primary backgrounds*/
+    --bg-light-red: hsla(0, 100%, 67%, 5%);
+    --bg-orangey-yellow: hsla(39, 100%, 56%, 5%);
+    --bg-green-teal: hsla(166, 100%, 37%, 5%);
+    --bg-cobalt-blue: hsla(234, 85%, 45%, 5%);
     /* Neutral */
     --white: hsl(0, 0%, 100%);
     --pale-blue: hsl(221, 100%, 96%);
@@ -27,6 +32,7 @@
 
     /*********** Border radius ***********/
     --br-container: 30px;
+    --br-summary-element: 10px;
 
     /*********** Padding ***********/
     --pd-top-inner-sections: 2rem;
@@ -75,6 +81,9 @@
 }
 .gap-1-rem{
     gap: 1rem;
+}
+.gap-summary-elem-score{
+    gap: 0.4rem;
 }
 
 /********************* Main classes *********************/
@@ -125,7 +134,40 @@ main{
     padding: var(--pd-top-inner-sections) 2.3rem;
 }
 .container #summarySection .summaryElements{
-    padding: 1rem 0;
+    margin: 1.6rem 0 3rem 0;
+}
+.container #summarySection .summaryElements .element{
+    padding: 1rem;
+    border-radius: var(--br-summary-element);
+    font-weight: 700;
+}
+.container #summarySection .summaryElements #reaction{
+    color: var(--light-red);
+    background-color: var(--bg-light-red);
+}
+.container #summarySection .summaryElements #memory{
+    color: var(--orangey-yellow);
+    background-color: var(--bg-orangey-yellow);
+}
+.container #summarySection .summaryElements #verbal{
+    color: var(--green-teal);
+    background-color: var(--bg-green-teal);
+}
+.container #summarySection .summaryElements #visual{
+    color: var(--cobalt-blue);
+    background-color: var(--bg-cobalt-blue);
+}
+.container #summarySection .summaryElements .element .elemScore{
+    color: var(--dark-gray-blue);
+    font-weight: 800;
+}
+.container #summarySection .summaryElements .element .elemScore .separator,
+.container #summarySection .summaryElements .element .elemScore .maxScore
+{
+    opacity: 50%;
+}
+.container #summarySection .summaryElements .element .elemScore .maxScore{
+    margin-left: -4px;
 }
 
 /********************* Media queries *********************/
