@@ -42,7 +42,15 @@
 }
 
 /********************* General *********************/
-
+.txt-light-lavender{
+    color: var(--light-lavender);
+}
+.txt-white{
+    color: var(--white);
+}
+.txt-dark-gray-blue{
+    color: var(--dark-gray-blue);
+}
 
 /********************* Flexbox *********************/
 .d-flex{
