@@ -51,6 +51,10 @@
     justify-content: center;
     align-content: center;
 }
+.d-f-column{
+    flex-flow: column wrap;
+    align-items: center;
+}
 
 /********************* Main classes *********************/
 main{
