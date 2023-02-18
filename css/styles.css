@@ -33,7 +33,7 @@
     /*********** Border radius ***********/
     --br-container: 30px;
     --br-summary-element: 10px;
-
+    --br-btn: 30px;
     /*********** Padding ***********/
     --pd-top-inner-sections: 2rem;
 
@@ -168,6 +168,14 @@ main{
 }
 .container #summarySection .summaryElements .element .elemScore .maxScore{
     margin-left: -4px;
+}
+.container #summarySection button{
+    background-color: var(--dark-gray-blue);
+    color: var(--pale-blue);
+    font-size: var(--fs-p);
+    border: 2px solid transparent;
+    padding: 0.8rem;
+    border-radius: var(--br-btn);
 }
 
 /********************* Media queries *********************/
