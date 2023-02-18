@@ -28,6 +28,9 @@
 
     /*********** Padding ***********/
     --pd-top-inner-sections: 2rem;
+
+    /*********** Other sizes ***********/
+    --score-circle-diameter: 190px;
 }
 
 /********************* Reset *********************/
@@ -65,6 +68,12 @@ main{
     background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
     border-radius: var(--br-container);
     padding: var(--pd-top-inner-sections) 3rem;
+}
+.container #resultSection .scoreDiv{
+    width: var(--score-circle-diameter);
+    height: var(--score-circle-diameter);
+    border-radius: 50%;
+    background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
 }
 .container #summarySection{
     background-color: var(--white);
