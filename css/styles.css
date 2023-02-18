@@ -78,6 +78,7 @@ main{
     height: var(--score-circle-diameter);
     border-radius: 50%;
     background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
+    margin: calc(var(--pd-top-inner-sections) + 0.5rem);
 }
 .container #summarySection{
     background-color: var(--white);
