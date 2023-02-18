@@ -21,6 +21,8 @@
     --persian-blue: hsla(241, 72%, 46%, 0);
 
     /*********** Font-sizes ***********/
+    --fs-score: 4rem;
+    --fs-great: 2rem;
     --fs-p: 1.125rem;
 
     /*********** Border radius ***********/
@@ -75,6 +77,7 @@ main{
 }
 .container #resultSection, .container #summarySection{
     width: calc(100% / 2);
+    max-width: 360px;
 }
 .container #resultSection{
     background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
@@ -87,6 +90,24 @@ main{
     border-radius: 50%;
     background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
     margin: calc(var(--pd-top-inner-sections) + 0.5rem);
+}
+.container #resultSection .scoreDiv .score{
+    font-size: var(--fs-score);
+    font-weight: 700;
+}
+.container #resultSection .scoreDiv .maxScore{
+    opacity: 60%;
+}
+.container #resultSection .descriptionScore{
+    padding: 0 1rem 1rem 1rem;
+}
+.container #resultSection .descriptionScore h3{
+    font-size: var(--fs-great);
+    margin-bottom: 1rem;
+}
+.container #resultSection .descriptionScore p{
+    text-align: center;
+    opacity: 80%;
 }
 .container #summarySection{
     background-color: var(--white);
