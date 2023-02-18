@@ -94,6 +94,7 @@ main{
 .container{
     width: 50%;
     border-radius: var(--br-container);
+    box-shadow: 1rem 1rem 4rem var(--pale-blue);
 }
 .container #resultSection, .container #summarySection{
     width: calc(100% / 2);
@@ -132,6 +133,7 @@ main{
 .container #summarySection{
     background-color: var(--white);
     padding: var(--pd-top-inner-sections) 2.3rem;
+    border-radius: 0 var(--br-container) var(--br-container) 0;
 }
 .container #summarySection .summaryElements{
     margin: 1.6rem 0 3rem 0;
