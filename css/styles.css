@@ -93,12 +93,15 @@ main{
 }
 .container{
     width: 50%;
+    max-width: 720px;
+    margin: 2rem;
     border-radius: var(--br-container);
     box-shadow: 1rem 1rem 4rem var(--pale-blue);
 }
 .container #resultSection, .container #summarySection{
     width: calc(100% / 2);
     max-width: 360px;
+    min-width: 280px;
 }
 .container #resultSection{
     background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
@@ -185,4 +188,33 @@ main{
 }
 
 /********************* Media queries *********************/
-
+@media screen and (min-width: 500px) and (max-width: 1120px){
+    .container{
+        width: 70%;
+        flex-flow: column;
+        margin: 2rem;
+        box-shadow: 0 0 4rem var(--pale-blue);
+    }
+    .container #resultSection, .container #summarySection{
+        width: 100%;
+        max-width: 100%;
+    }
+    .container #resultSection{
+        border-radius: var(--br-container) var(--br-container) 0 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .container{
+        width: 100%;
+        flex-flow: column;
+        padding: 0;
+        margin: 0;
+    }
+    .container #resultSection, .container #summarySection{
+        width: 100%;
+        max-width: 100%;
+    }
+    .container #resultSection{
+        border-radius: 0 0 var(--br-container) var(--br-container);
+    }
+}
