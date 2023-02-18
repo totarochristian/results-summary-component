@@ -24,7 +24,7 @@
     --fs-p: 1.125rem;
 
     /*********** Border radius ***********/
-
+    --br-container: 30px;
 }
 
 /********************* Reset *********************/
@@ -53,15 +53,17 @@ main{
 }
 .container{
     width: 50%;
+    border-radius: var(--br-container);
 }
-.container #result, .container #summary{
+.container #resultSection, .container #summarySection{
     width: calc(100% / 2);
 }
 .container #resultSection{
-
+    background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: var(--br-container);
 }
 .container #summarySection{
-
+    background-color: var(--white);
 }
 
 /********************* Media queries *********************/
