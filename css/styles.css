@@ -177,6 +177,10 @@ main{
     padding: 0.8rem;
     border-radius: var(--br-btn);
 }
+.container #summarySection button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
 
 /********************* Media queries *********************/
 
