@@ -53,6 +53,9 @@
 .txt-dark-gray-blue{
     color: var(--dark-gray-blue);
 }
+.width-100perc{
+    width: 100%;
+}
 
 /********************* Flexbox *********************/
 .d-flex{
@@ -63,7 +66,15 @@
 }
 .d-f-column{
     flex-flow: column wrap;
+}
+.d-f-space-between{
+    justify-content: space-between;
+}
+.d-f-align-items-center{
     align-items: center;
+}
+.gap-1-rem{
+    gap: 1rem;
 }
 
 /********************* Main classes *********************/
@@ -112,6 +123,9 @@ main{
 .container #summarySection{
     background-color: var(--white);
     padding: var(--pd-top-inner-sections) 2.3rem;
+}
+.container #summarySection .summaryElements{
+    padding: 1rem 0;
 }
 
 /********************* Media queries *********************/
