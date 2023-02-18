@@ -25,6 +25,9 @@
 
     /*********** Border radius ***********/
     --br-container: 30px;
+
+    /*********** Padding ***********/
+    --pd-top-inner-sections: 2rem;
 }
 
 /********************* Reset *********************/
@@ -61,9 +64,11 @@ main{
 .container #resultSection{
     background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
     border-radius: var(--br-container);
+    padding: var(--pd-top-inner-sections) 3rem;
 }
 .container #summarySection{
     background-color: var(--white);
+    padding: var(--pd-top-inner-sections) 2.3rem;
 }
 
 /********************* Media queries *********************/
