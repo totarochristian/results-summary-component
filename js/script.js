@@ -4,4 +4,8 @@ fetch('../data.json')
 .then((response) => response.json())
 .then((data) => {
   console.log(data);
+  data.forEach(element => {
+    var container = document.getElementById(element.category.toLowerCase());
+    console.log(container)
+  });
 });
