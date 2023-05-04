@@ -6,6 +6,7 @@ fetch('../data.json')
   console.log(data);
   data.forEach(element => {
     var container = document.getElementById(element.category.toLowerCase());
-    console.log(container)
+    var img = container.getElementsByClassName("icon");
+    console.log(img);
   });
 });
