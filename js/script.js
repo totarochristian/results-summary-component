@@ -8,6 +8,7 @@ fetch('../data.json')
     var container = document.getElementById(element.category.toLowerCase());
     var img = container.getElementsByClassName("icon")[0];
     img.src = element.icon;
-    console.log(img);
+    var score = container.getElementsByClassName("score")[0];
+    score.textContent = element.score;
   });
 });
